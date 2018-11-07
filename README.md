@@ -1,10 +1,10 @@
-# 389ds/IPA Exporter [![Build Status](https://travis-ci.org/terrycain/389ds_exporter.svg)][travis]
+# 389ds / FreeIPA Exporter [![Build Status](https://travis-ci.org/terrycain/389ds_exporter.svg)][travis]
 
 [![CircleCI](https://circleci.com/gh/terrycain/389ds_exporter/tree/master.svg?style=shield)][circleci]
 
 Started out as just a replication status exporter, and evolved to export more FreeIPA related objects.
 
-Is my first stab at go, it works but it could be better and I hope to improve it. The main this is that it has a loop that
+Is my first stab at go, it works but it could be better and I hope to improve it. The main thing is that it has a loop that
 hits LDAP and performs the queries, it doesn't query LDAP when /metrics is queried. What I want is to query LDAP when /metrics
 is hit and then cache for a period of time (incase multiple prometheus are running).
 
@@ -50,6 +50,13 @@ make
 
 TBD
 
+
+### Credits
+
+This repo essentially started off as a clone of the openldap_exporter modified to query
+some FreeIPA DNs. The openldap_exporter was a great help in getting this started, as was
+the consul_exporter which served as a great reference on how to package a prometheus
+exporter.
 
 [circleci]: https://circleci.com/gh/terrycain/389ds_exporter
 [travis]: https://travis-ci.org/terrycain/389ds_exporter
