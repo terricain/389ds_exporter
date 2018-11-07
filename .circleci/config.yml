@@ -65,7 +65,7 @@ jobs:
     - store_artifacts:
         path: .tarballs
         destination: releases
-    - run: ln -s .build/linux-amd64/terrycain 389ds_exporter
+    - run: ln -s .build/linux-amd64/389ds_exporter 389ds_exporter
     - run: make docker DOCKER_IMAGE_TAG=$CIRCLE_TAG
     - run: docker login -u $DOCKER_LOGIN -p $DOCKER_PASSWORD
     - run: |
