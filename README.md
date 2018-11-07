@@ -49,3 +49,7 @@ make
 ### Using docker
 
 TBD
+
+
+[circleci]: https://circleci.com/gh/terrycain/389ds_exporter
+[travis]: https://travis-ci.org/terrycain/389ds_exporter
