@@ -2,6 +2,8 @@
 
 [![CircleCI](https://circleci.com/gh/terrycain/389ds_exporter/tree/master.svg?style=shield)][circleci]
 
+__It listens on port 9496 by default__
+
 Started out as just a replication status exporter, and evolved to export more FreeIPA related objects.
 
 Is my first stab at go, it works but it could be better and I hope to improve it. The main thing is that it has a loop that
