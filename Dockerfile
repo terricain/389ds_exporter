@@ -1,5 +1,5 @@
 FROM        quay.io/prometheus/busybox:latest
-LABEL maintainer="The Prometheus Authors <prometheus-developers@googlegroups.com>"
+LABEL maintainer="terrycain"
 
 COPY 389ds_exporter /bin/389ds_exporter
 
